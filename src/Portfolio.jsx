@@ -120,6 +120,24 @@ export default function Portfolio() {
               Software Developer
             </div>
 
+            <a
+              href="/resume.pdf"
+              download
+              className="inline-flex items-center gap-1 mt-4 w-fit transition-colors"
+              style={{
+                ...fMono,
+                fontSize: "0.78rem",
+                textDecoration: "none",
+                borderBottom: `1px solid ${COLORS.ink}`,
+                paddingBottom: 2,
+                color: COLORS.ink,
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.color = COLORS.signal; e.currentTarget.style.borderColor = COLORS.signal; }}
+              onMouseLeave={(e) => { e.currentTarget.style.color = COLORS.ink; e.currentTarget.style.borderColor = COLORS.ink; }}
+            >
+              Résumé ↓
+            </a>
+
             <nav className="mt-12">
               <div
                 style={fMono}
